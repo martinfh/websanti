@@ -1,0 +1,356 @@
+body {
+  margin: 0px; }
+
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%; }
+
+.site-title {
+  font-size: 30px;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+  background-color: black; }
+
+.navigation {
+  padding-top: 20px;
+  width: 100%;
+  height: 160px;
+  float: right;
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, black 30%); }
+
+.navigation-links :hover {
+  transition: all 0.1s ease;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  font-family: 'Assistant', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: black; }
+
+.navigation-links {
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  width: 100%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: black; }
+
+.navigation-contact {
+  text-decoration: none;
+  float: right;
+  padding-left: 50px;
+  width: 100%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  font-style: italic; }
+
+.navigation-contact :hover {
+  transition: all ease; }
+
+.navigation-contactpagetitle {
+  text-decoration: none;
+  float: right;
+  padding-left: 50px;
+  width: 100%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  color: black;
+  background-color: #89545E;
+  font-style: italic; }
+
+.navigation-contact-pagetitle :hover {
+  transition: all ease; }
+
+.navigation-links-contact {
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  width: 100%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  background-color: #89545E; }
+
+.navigation-links-contact :hover {
+  transition: all ease;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  font-family: 'Assistant', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  background-color: #89545E; }
+
+.navigation-contact1 {
+  padding-top: 20px;
+  width: 100%;
+  float: right;
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: #89545E; }
+
+.site-title-contact {
+  font-size: 40px;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'IBM Plex Mono', monospace;
+  color: black;
+  background-color: #89545E; }
+
+footer {
+  float: right;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: -800px;
+  bottom: 0px;
+  position: fixed;
+  padding-left: 30px;
+  padding-bottom: 10px; }
+
+.about {
+  padding-left: 75px;
+  padding-top: 50px;
+  float: left;
+  width: 40%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 15px; }
+
+.contact-info {
+  padding-top: 50px;
+  float: right;
+  width: 40%;
+  font-family: 'Assistant', sans-serif;
+  font-size: 15px; }
+
+/*
+- Video Wrapper can be any element
+- If the element is the height and width of the full screen this will still work
+*/
+.box-left {
+  margin-top: 100px;
+  margin-left: 70px;
+  top: 80%;
+  left: 80%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex; }
+
+.box-right {
+  margin-top: 50px;
+  margin-left: 70px;
+  top: 80%;
+  left: 80%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex; }
+
+.videoWrapper1 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 50px;
+  position: relative;
+  z-index: -1;
+  width: 700px;
+  flex: 0 0 700px; }
+
+.content-left p {
+  margin-top: 30px;
+  color: white;
+  width: 500px;
+  font-size: 13px;
+  font-family: 'IBM Plex Mono', monospace; }
+
+.content-right p {
+  margin-top: 30px;
+  color: white;
+  width: 500px;
+  font-size: 13px;
+  font-family: 'IBM Plex Mono', monospace; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: -1; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center; }
+
+.mySlides {
+  display: none; }
+
+.active-slide {
+  display: block; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+body {
+  margin: 0px; }
+
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+.menu-contacto {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: white;
+  float: right;
+  margin-right: 50px;
+  margin-top: -300px;
+  text-align: right;
+  font-size: 20px; }
+
+.menu-contacto a:hover {
+  text-decoration: line-through; }
+
+.menu-contacto-contacto {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: white;
+  float: right;
+  text-align: right;
+  margin-right: 50px;
+  font-size: 20px; }
+
+.menu-contacto-contacto a:hover {
+  text-decoration: line-through; }
+
+.menu-contacto-proyectos {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  color: black;
+  float: right;
+  text-align: right;
+  margin-right: 50px;
+  font-size: 20px; }
+
+.menu-contacto-proyectos a:hover {
+  text-decoration: line-through; }
+
+a {
+  text-decoration: none; }
+
+.nombre-santi {
+  margin-top: 300px;
+  margin-left: 150px; }
+
+.nombre-santi img:hover {
+  cursor: pointer; }
+
+.menu-santi a {
+  font-size: 30px;
+  transition: 0.3s; }
+
+.menu-santi a:hover {
+  text-shadow: 2px 2px 10px #CE5937; }
+
+.contact-info {
+  font-family: 'Lora', serif;
+  width: 500px;
+  font-size: 15px;
+  float: right; }
+
+.lista-expos p:hover {
+  cursor: pointer;
+  color: black; }
+
+.lista-expos p {
+  cursor: pointer;
+  color: grey; }
+

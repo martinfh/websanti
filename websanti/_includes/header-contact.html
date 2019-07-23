@@ -1,0 +1,13 @@
+<header>
+	<div class="navigation-contact1">
+		<a class= "site-title-contact" style = "color: white; text-decoration: none;float: left; text-align: right; padding-left: 30px;line-height: 80%; margin-top: -10px;
+ " href="/">Pastora Orozco<br><p style="color:grey;font-style: extra-light;font-size: 20px;">Art Department</p></a>
+		<nav id="navbar"  class="navigation-links-contact">
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" style="padding-left: 50px; padding-right:50px;text-decoration: none;color:grey;">{{ item.name }}</a>
+  {% endfor %}
+</nav>
+		<!--<a href="index.html" style="float:right; color:grey;font-size: 30px;margin-right: 60px; margin-top: -30px; text-decoration: none;"><img style="width: 130px;"src="assets/images/backarrowpastora.png"></a>--->
+	</div>
+	</div>
+</header>
